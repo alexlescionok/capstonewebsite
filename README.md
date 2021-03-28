@@ -1,0 +1,1 @@
+This was a group project as part of the IN4.0 Talent Academy. We created a website for an imaginary studio named "Capstone Studios". Team members: Jordan Wheeler, David Adewole, Jo Fountain, Ben Sid West, Alex Lescionok.
