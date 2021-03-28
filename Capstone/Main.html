@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--vector images for buttons and social media etc ... treat like a character(edit same as text)-->
+    <script src="https://kit.fontawesome.com/d48a641bcb.js" crossorigin="anonymous" async></script>
+
+    <!--Google Font Import (Open Sans)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!--GooglemapsAPI, defer so it loads after the HTML and after the JS function is defined-->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyqsQcX_0RKK2r1dNFzMFc7kOutegF9G4&callback=initMap&libraries=&v=weekly"defer>
+    </script>
+
+    <!--Ma Java-->
+    <script src="mainJava.js" async></script>
+
+
+    <!--CSS Stylesheet, Global first to allow local styles overide-->
+    <link rel="stylesheet" href="GLOBAL.css">
+
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+
+
+<body>
+    <header>
+        <img src="logo.png" id="logo">
+
+        
+
+        <!--NAVIGATION BAR ... add CurrentPage class to the right tag-->
+        <ul id='nav'>
+            <li class="NavList CurrentPage" id="firstNav"><a href="Main.html">HOME</a></li>
+
+            <!--Dropdown bit-->
+            <div class='NavList dropdownclass'>
+                <a class='dropdownbtn'>SERVICES</a>
+                <div class='dropdowncontent'>
+                    <a href="Services/Services.html#RecordingAnchor">Recording</a>
+                    <a href="Services/Services.html#EquipmentAnchor">Equipment</a>
+                    <a href="Services/Services.html#MasteringAnchor">Mastering</a>
+                    <a href="Services/Services.html">More...</a>
+                </div>
+            </div>
+
+
+            <li class="NavList"><a href="Meet/meet.html">MEET US</a></li>
+            <li class="NavList"><a href="ContactUs/contactus.html">CONTACT</a></li>
+            <li class="NavList"><a href="AboutUs/aboutus.html">ABOUT US</a></li>
+        </ul>
+    </header>
+
+    <main>
+        </script>
+
+        <!--Service showcase-->
+        <div class="ImageCont">
+            <div class="HoverImage">MASTERING<a href="Services/Services.html#MasteringAnchor"><img src="Mastering.jpeg" alt="Mastering" class="TopImage"></a></div>
+            <div class="HoverImage">RECORDING<a href="Services/Services.html#RecordingAnchor"><img src="recording.jpg" alt="Recording" class="TopImage"></a></div>
+            <br>
+            <div class="HoverImage">EQUIPMENT<a href="Services/Services.html#EquipmentAnchor"><img src="equipment.jpg" alt="Equipment" class="TopImage"></a></div>
+            <div class="HoverImage">MORE<a href="Services/Services.html"><img src="more.jpg" alt="More" class="TopImage"></a></div>
+        </div>
+        <!--User Comment functionality-->
+
+        <!--Title and New Post button-->
+        <h2 style="display: inline-block;">Comments and Announcements</h2> 
+        <div id=newpostcont><button class="PostButton" 
+            onclick="initNewPost()">New Post</button></div>
+
+
+        <!--Pop-up and comment form-->
+        <div class='FormCont' id="closeForm">
+            <i class="fas fa-times-circle" onclick="document.getElementById('closeForm').style.display = 'none'"></i>
+
+            <form class='PopUpForms' action="javascript:submitpost(document.getElementsByName('addtext')[0].value)">
+                <textarea id="addtextid" name="addtext" cols="10" rows="10" maxlength="300" placeholder="300 characters maximum!" required></textarea>
+                <input type="text" name="uname" id="uname" placeholder="Your Name (Required)" required maxlength="20"><br>
+                <input type="submit" value="Submit" class="formbutton">
+            </form>
+        </div>
+
+        <!--User Comment and announcement feed-->
+        <div class="UserComments" id='comments'>
+            <p>I really enjoyed my time recording here! Very friendly staff and full of laughs!<b> - Jimmy</b></p>
+            <p>Hi guys! We now have gong-bath spaces available, come and book before they're full! <b style="color: red"> - CAPSTONETEAM</b></p>
+        </div>
+
+        <span><h2>Check out some of our friends!</h2></span>
+        
+        <!--SoundCloud functionality, each block is a featured artist-->
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/526175226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/davetoken" title="Dave Token" target="_blank" style="color: #cccccc; text-decoration: none;">Dave Token</a>
+            <a href="https://soundcloud.com/davetoken/thehomieswent" title="The Homies Went" target="_blank" style="color: #cccccc; text-decoration: none;">The Homies Went</a>
+        </div>
+
+
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/400153710&color=%232aa1a1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/sarcolinebanduk" title="Sarcoline" target="_blank" style="color: #cccccc; text-decoration: none;">Sarcoline</a> · 
+            <a href="https://soundcloud.com/sarcolinebanduk/on-my-mind" title="On My Mind" target="_blank" style="color: #cccccc; text-decoration: none;">On My Mind</a>
+        </div>
+
+        <h2 id="MapTitle">Come find us...</h2>
+
+        <!--GoogleMaps-->
+        <div id="map"></div>
+
+    </main>
+
+    <footer>
+        <!--contact for the footer-->
+        <div class="contactfooter">
+        <ul>
+            <li class="footerdetails">23 Capstone way, Manchester</li>
+            <li class="footerdetails"> +44 123 456 789</li>
+            <li class="footerdetails" id="lastfooter">email@capstoneemail.com</li>
+        </ul>
+        </div>
+
+        <!--Social media buttons-->
+        <div class="socialmedia">
+            <i class="fab fa-facebook-square" onclick="parent.open('https://www.facebook.com/')"></i>
+            <i class="fab fa-twitter-square" onclick="parent.open('https://www.twitter.com/')"></i>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

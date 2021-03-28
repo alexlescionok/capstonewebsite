@@ -1,0 +1,154 @@
+
+h1{
+  font-size: 50px;
+  margin: 20px 0px;
+  line-height: 1;
+}
+h2{
+ margin: 5px 0px;
+}
+
+
+.colour_pop{
+  color: rgba(55, 89, 193, 0.6);
+}
+
+
+.content_wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (min-width: 1856px) {
+  h1 .colour_pop {
+    font-size: 70px;
+  }
+}
+
+
+@media screen and (max-width: 1646px) {
+  h1 {
+    font-size: 43px;
+    line-height: 1;
+    margin: 20px 0;
+  }
+}
+
+
+@media screen and (max-width: 1427px) {
+
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+    margin: 15px 0;
+  }
+  .column{
+    max-width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 1428px) {
+  .container {
+    width: 30%;
+    display: inline-block;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .content_wrap {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 1427px) {
+  .container {
+    width: 45%;
+    display: inline-block;
+    padding-right: 16px;
+  }
+}
+
+
+@media screen and (max-width: 925px) {
+  .container {
+    width: 100%;
+    display: inline-block;
+    padding-right: 16px;
+  }
+}
+
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 0;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: .3s ease background-color;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.review {
+    color: grey;
+    font-size: 30px;
+}
+
+.contactbtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(55, 89, 193, 0.6);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: .3s ease background-color;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.contactbtn:hover{
+  background-color: #555;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.text{
+  padding: 0px 10px;
+  margin-bottom: 20px;
+
+}

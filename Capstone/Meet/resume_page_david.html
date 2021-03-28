@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--vector images for buttons and social media etc ... treat like a character(edit same as text)-->
+    <script src="https://kit.fontawesome.com/d48a641bcb.js" crossorigin="anonymous" async></script>
+
+    <!--Chosen fonts from google fonts, maybe check support for standard fonts in html? (we're graded on simplicity)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="../GLOBAL.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+
+
+<body>
+  <header>
+
+    <div><img src="../logo.png" alt="CapstoneLTD" id='logo'></div>
+
+
+    <!--NAVIGATION BAR-->
+    <ul id='nav'>
+        <li class="NavList" id="firstNav"><a href="../Main.html">HOME</a></li>
+
+        <!--Dropdown bit-->
+        <div class='NavList dropdownclass'>
+          <a class='dropdownbtn'>SERVICES</a>
+          <div class='dropdowncontent'>
+            <a href="../Services/Services.html#RecordingAnchor">Recording</a>
+            <a href="../Services/Services.html#EquipmentAnchor">Equipment</a>
+            <a href="../Services/Services.html#MasteringAnchor">Mastering</a>
+            <a href="../Services/Services.html">More...</a>
+          </div>
+      </div>
+
+
+        <li class="NavList CurrentPage"><a href="meet.html">DAVID</a></li>
+        <li class="NavList"><a href="../ContactUs/contactus.html">CONTACT</a></li>
+        <li class="NavList"><a href="../AboutUs/aboutus.html">ABOUT US</a></li>
+    </ul>
+</header>
+
+
+    <main>
+      <section class="content_wrap">
+        <div class="container">
+          <h1><span class="colour_pop">David Adewole</span> - Marketing Director</h1>
+            <img src="TeamImages/David.jpg" alt="David Adewole" class="resume">
+              <p><span class="about">
+
+                A creative, hardworking and dedicated individual that enjoys working within a team. Highly experienced in providing excellent customer service by offering the appropriate service to client needs, no matter the occasion. My hobbies include Technology, Social Media Management (portfolio available on request), creating music, being a DJ and hosting pub quizzes
+                <ul class="resume_links">
+                  <li class="resume_contact">
+                    <!-- replace link and text -->
+                    <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+                  </li>
+                  <li class="resume_contact">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                  </li>
+                  <li class="resume_contact">
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                  </li>
+                </ul>
+                  <h2 class="colour_pop">Education</h2>
+                  <h4>University of Salford</h4>
+                  <p>MA Music: Composition, 2018 - 2021</p>
+                  <h4>University of Salford</h4>
+                  <p>BA(Hons): Popular Music and Recording, 2015 - 2017</p>
+              </div>
+          </section>
+    </main>
+
+    <footer>
+        <!--contact for the footer-->
+        <div class="contactfooter">
+        <ul>
+            <li class="footerdetails">23 Capstone way, Manchester</li>
+            <li class="footerdetails"> +44 123 456 789</li>
+            <li class="footerdetails" id="lastfooter">email@capstoneemail.com</li>
+        </ul>
+        </div>
+
+        <!--Social media buttons-->
+        <div class="socialmedia">
+            <i class="fab fa-facebook-square" onclick="parent.open('https://www.facebook.com/')"></i>
+            <i class="fab fa-twitter-square" onclick="parent.open('https://www.twitter.com/')"></i>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

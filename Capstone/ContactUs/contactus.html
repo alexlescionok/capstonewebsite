@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <!--vector images for buttons and social media etc ... treat like a character(edit same as text)-->
+    <script src="https://kit.fontawesome.com/d48a641bcb.js" crossorigin="anonymous" async></script>
+
+    <!--Google Font Import (Open Sans)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!--GooglemapsAPI, defer so it loads after the HTML and after the JS function is defined-->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyqsQcX_0RKK2r1dNFzMFc7kOutegF9G4&callback=initMap&libraries=&v=weekly"defer>
+    </script>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                $("input[type='text'], textarea ").val("");
+            });
+        });
+    </script>
+
+
+    <!--CSS Stylesheet, Global first to allow local styles overide-->
+    <link rel="stylesheet" href="../GLOBAL.css">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<header>
+    <img src="../logo.png" id="logo">
+
+    <!--HELP!!!!! FOR EDIT I couldn't get the global.css connect properly so hopefully it isn't too hard to link up!!! -->
+
+
+
+    <!--NAVIGATION BAR ... add CurrentPage class to the right tag-->
+    <ul id='nav'>
+        <li class="NavList" id="firstNav"><a href="../Main.html">HOME</a></li>
+
+        <!--Dropdown bit-->
+        <div class='NavList dropdownclass'>
+            <a class='dropdownbtn'>SERVICES</a>
+            <div class='dropdowncontent'>
+                <a href="../Services/Services.html#RecordingAnchor">Recording</a>
+                <a href="../Services/Services.html#EquipmentAnchor">Equipment</a>
+                <a href="../Services/Services.html#MasteringAnchor">Mastering</a>
+                <a href="../Services/Services.html">More...</a>
+            </div>
+        </div>
+        
+        <li class="NavList"><a href="../Meet/meet.html">MEET US</a></li>
+        <li class="NavList CurrentPage"><a href="contactus.html">CONTACT</a></li>
+        <li class="NavList"><a href="../AboutUs/aboutus.html">ABOUT US</a></li>
+    </ul>
+</header>
+
+<main>
+<body>
+    <!--CONTACT FORM STARTS HERE -->
+    <div class="wrapper">
+        <div class="content">
+            <h1>NICE TO MEET YOU!</h1>
+            <p>Send us a message and a member of the team will get back to you within 24 hours</p>
+        </div>
+
+        <!--FORM-->
+        <div class="form">
+
+            <div class="top-form">
+                <div class="inner-form">
+                    <div class="label">NAME</div>
+                    <input type="text" placeholder="Your name here">
+                </div>
+                <div class="inner-form">
+                    <div class="label">EMAIL</div>
+                    <input type="text" placeholder="muso@muso.com">
+                </div>
+                <div class="inner-form">
+                    <div class="label">MOBILE</div>
+                    <input type="text" placeholder="1234567890">
+                </div>
+            </div>
+
+            <div class="middle-form">
+                <div class="inner-form">
+                    <div class="label">SERVICE</div>
+                    <input type="text" placeholder="Which services are you interested in?">
+                </div>
+            </div>
+
+            <div class="bottom-form">
+                <div class="inner-form">
+                    <div class="label">MESSAGE</div>
+                    <textarea placeholder="Your message" style="resize: none;"></textarea>
+                </div>
+            </div>
+
+            <div class="btn">SEND</div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</main>
+
+<footer>
+    <!--contact for the footer-->
+    <div class="contactfooter">
+    <ul>
+        <li class="footerdetails">23 Capstone way, Manchester</li>
+        <li class="footerdetails"> +44 123 456 789</li>
+        <li class="footerdetails" id="lastfooter">email@capstoneemail.com</li>
+    </ul>
+    </div>
+
+    <!--Social media buttons-->
+    <div class="socialmedia">
+        <i class="fab fa-facebook-square" onclick="parent.open('https://www.facebook.com/')"></i>
+        <i class="fab fa-twitter-square" onclick="parent.open('https://www.twitter.com/')"></i>
+    </div>
+
+
+</footer>
+</html>

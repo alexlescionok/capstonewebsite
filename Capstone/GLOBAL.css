@@ -1,0 +1,174 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Makes the page resize*/
+}
+
+#logo {
+    width: 15vw;
+    min-width: 136px;
+    margin-bottom: 5px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    font-family: 'Open Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-width: 320px; /*Depends on logo size! pixels are same size everywhere so can be absolute measure,
+                                stops the nav bar from bunching up and then overflowing
+                                REMOVE ME TO AND RESIZE SCREEN*/
+}
+main {
+    position: relative;
+    border-radius: 5px;
+    background-color:rgb(237, 245, 225);
+    margin: 0 auto;
+    height: auto;
+    max-width: 75vw;
+    min-width: 320px;
+
+}
+
+header{
+    display: flex; /*Would need to be display:sticky for it to stay at top, behaves well with flex so far*/
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(5, 56, 107);
+
+}
+
+#nav {
+    list-style-type: none;
+    padding: 0; /*removes browser default settings*/
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+    height: 30px;
+
+}
+
+.NavList {
+    display: flex;
+    float: left;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+#firstNav {
+    border: none;
+}
+
+.NavList a{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto; /*centers*/
+    text-decoration: none; /*removes grossness*/
+    color:rgb(5, 56, 107);
+    font-size: 1.5vw;
+}
+
+.NavList.CurrentPage {
+    color: rgb(11, 89, 167);
+    opacity: 0.5;
+}
+
+.NavList a:hover, .dropdownclass:hover .dropdownbtn {
+    color: rgb(11, 89, 167);
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.dropdowncontent {
+    display: none;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding-right: 1vw;
+    width: 9vw; /*just to make it fit and it doesnt fix me pls*/
+    position: absolute;
+    top: 5vh;
+    z-index: 1;
+}
+
+/*Focus for mobile phones!*/
+.dropdownclass:hover .dropdowncontent, .dropdownclass:focus {
+    display: block;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.3s;
+}
+
+.dropdowncontent a {
+    width: 7vw;
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+footer{
+    position: relative;
+    height: 2.5rem;
+    width: 100%;
+    margin-top: 10px;
+    bottom: 0; /*stays at the bottom*/
+    border-top: 1px dashed black; /*Just so you can see the structure, delete*/
+}
+
+.contactfooter ul {
+    padding-inline-start: 0px; /*Quick fix*/
+    float: left;
+    position: relative;
+    list-style-type: none;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contactfooter li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+.footerdetails {
+    padding: 10px;
+}
+
+#lastfooter {
+    border: none;
+}
+
+.socialmedia {
+    float: right;
+    position: relative;
+    height: 100%;
+    font-size: xx-large;
+    margin-right: 5px;
+}
+
+.fa-facebook-square {
+    color: blue;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fa-twitter-square {
+    color: rgb(83, 204, 245);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fab:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--vector images for buttons and social media etc ... treat like a character(edit same as text)-->
+    <script src="https://kit.fontawesome.com/d48a641bcb.js" crossorigin="anonymous" async></script>
+    
+
+    <!--Chosen fonts from google fonts, maybe check support for standard fonts in html? (we're graded on simplicity)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="../GLOBAL.css">
+    <link rel="stylesheet" href="../AboutUs/about.css">
+    
+    <!--Javascript-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+</head>
+
+
+
+<body>
+    <header>
+        <img src="../logo.png" id="logo">
+
+
+        <!--NAVIGATION BAR-->
+        <ul id='nav'>
+            <li class="NavList" id="firstNav"><a href="../Main.html">HOME</a></li>
+
+            <!--Dropdown bit-->
+            <div class='NavList dropdownclass'>
+                <a class='dropdownbtn'>SERVICES</a>
+                <div class='dropdowncontent'>
+                    <a href="../Services/Services.html#RecordingAnchor">Recording</a>
+                    <a href="../Services/Services.html#EquipmentAnchor">Equipment</a>
+                    <a href="../Services/Services.html#MasteringAnchor">Mastering</a>
+                    <a href="../Services/Services.html">More...</a>
+                </div>
+            </div>
+
+
+            <li class="NavList"><a href="../Meet/meet.html">MEET US</a></li>
+            <li class="NavList"><a href="../ContactUs/contactus.html">CONTACT</a></li>
+            <li class="NavList CurrentPage"><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </header>
+
+
+<main>
+    <button id="scrolltotop">^</button> <!-- scroll to top-->
+
+    
+    <!-- About Us Section-->   
+        <section id="aboutus">
+            <div class="about-us-container">
+                <div class="about-section">
+                    <div class="img-container">
+                        <img src="Images/AboutUsImg1.jpg" alt="guitar" style="float:right;height:450px; width: 400px; margin-top: 5px;">
+                            
+    </div>
+        <div class="about-text">Capstone Studios is a multi-purpose built recording facility, located in Arndale, Manchester.
+            Established in 2004, Capstone Studios supplies the same experience as bigger studios. 
+            With over 50 years of combined experience,
+            we provide a dynamic and hands-on approach to exceed client and audience expectations.</div>
+            <div class="about-text2">The process of creation is different for everyone, yet the need for a quiet, productive space is universal. With self-service access, professional equipment provided free, and affordable day rates, our recording studios help you capture your creativity the moment it sparks. Pop in for an hour, settle in for a day session, record, mix, edit — the space is yours for whatever purpose you need, and available 24/7 to work around your daily routine.
+            </div>
+            <img src="Images/AboutUsImg2.jpg" alt="guitar" style="float:right;height:450px; width: 400px; margin-top: 5px;">
+            <img src="Images/AboutUsImg3.jpg" alt="guitar" style="float:left;height:450px; width: 400px; margin-top: 5px;">
+            <div class="about-text3">Our philosophy is to provide a friendly, relaxed atmosphere and perfect environment for artists to express themselves and craft timeless recordings that capture the creative spirit, skill and energy of their performance. Conceived by international writers and producers, Capstone Studio's 360-degree services offer an affordable one-stop solution to take your music to market using leading industry associates with free pre-production and PR support on all EP and album packages.
+                    </div>
+                    
+        </div>
+    </div>
+</div>
+
+
+
+    </section>     
+</main>
+
+    <footer>
+        <!--contact for the footer-->
+        <div class="contactfooter">
+        <ul>
+            <li class="footerdetails">23 Capstone way, Manchester</li>
+            <li class="footerdetails"> +44 123 456 789</li>
+            <li class="footerdetails" id="lastfooter">email@capstoneemail.com</li>
+        </ul>
+        </div>
+
+        <!--Social media buttons-->
+        <div class="socialmedia">
+            <i class="fab fa-facebook-square" onclick="parent.open('https://www.facebook.com/')"></i>
+            <i class="fab fa-twitter-square" onclick="parent.open('https://www.twitter.com/')"></i>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
